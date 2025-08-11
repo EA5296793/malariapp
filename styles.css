@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #004d66;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0077aa;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f80;
+}
+
+.resultado {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+    padding-right: 5px;
+}
+
+.logo-mosquito {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .logo-mosquito {
+        max-width: 100px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

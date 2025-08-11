@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuento de Parásitos Automático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <img src="mosquito1.png" alt="Mosquito" class="logo-mosquito">
+    <h2>Recuento de Parásitos</h2>
+
+    <label for="parasitos">Número de parásitos observados:</label>
+    <input type="number" id="parasitos" placeholder="Ejemplo: 50" required>
+
+    <label for="leucocitosReales">Número real de leucocitos contados (opcional si muy alta parasitemia):</label>
+    <input type="number" id="leucocitosReales" placeholder="Solo si caso especial">
+
+    <label for="altaParasitemia">
+        <input type="checkbox" id="altaParasitemia">
+        Parasitemia muy alta (caso especial)
+    </label>
+
+    <button onclick="calcular()">Calcular recuento</button>
+
+    <div class="resultado" id="resultado">Resultado aquí</div>
+
+    <footer>
+        Desarrollado por Elias Acuña
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
